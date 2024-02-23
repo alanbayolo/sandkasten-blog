@@ -8,8 +8,8 @@ interface Props {
 const { href, title, body } = Astro.props;
 ---
 
-<li class="link-card">
-	<a href={href}>
+<li class="link-card ">
+	<a href={href} class="bg-[#3A3E5E]/[0.11] hover:bg-[#3A3E5E]/[0.7] backdrop-blur-[1.5px]">
 		<h2>
 			{title}
 			<span>&rarr;</span>
@@ -20,14 +20,15 @@ const { href, title, body } = Astro.props;
 	</a>
 </li>
 <style>
+	{/* z-10 flex flex-col items-center space-y-5 py-4 border-2 p-2 rounded-2xl border-[#C5BEBE]/[0.14] bg-[#3A3E5E]/[0.11] backdrop-blur-[1.5px] */}
 	.link-card {
 		list-style: none;
 		display: flex;
 		padding: 1px;
-		background-color: #23262d;
+		/*background-color: #23262d;*/
 		background-image: none;
 		background-size: 400%;
-		border-radius: 7px;
+		border-radius: 12px;
 		background-position: 100%;
 		transition: background-position 0.6s cubic-bezier(0.22, 1, 0.36, 1);
 		box-shadow: inset 0 0 0 1px rgba(255, 255, 255, 0.1);
@@ -37,10 +38,10 @@ const { href, title, body } = Astro.props;
 		text-decoration: none;
 		line-height: 1.4;
 		padding: calc(1.5rem - 1px);
-		border-radius: 8px;
+		border-radius: 13px;
 		color: white;
-		background-color: #23262d;
-		opacity: 0.8;
+		/*background-color: #23262d;*/
+		/*opacity: 0.8;*/
 	}
 	h2 {
 		margin: 0;
