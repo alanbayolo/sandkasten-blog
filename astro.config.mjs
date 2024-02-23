@@ -4,6 +4,6 @@ import tailwind from "@astrojs/tailwind";
 
 // https://astro.build/config
 export default defineConfig({
-  site: 'https://sandkasten.github.io',
+  site: 'https://alanbayolo.github.io/sandkasten-blog/',
   integrations: [tailwind()]
 });
