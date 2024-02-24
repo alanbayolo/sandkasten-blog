@@ -1,13 +1,14 @@
 ---
 const {frontmatter} = Astro.props;
-import styles from '../style.ts';
+import styles from '../style.ts'
 import Header from '../components/Header.astro' ;
 ---
+<!doctype html>
 <html lang="en" >
 	<head>
 		<meta charset="UTF-8" />
 		<meta name="description" content="sandkasten" />
-		<meta name="viewport" content="width=device-width" />
+		<meta content="width=device-width, initial-scale=1" name="viewport" />
 		<link rel="icon" type="image/svg+xml" href="/favicon.ico" />
 		<meta name="generator" content={Astro.generator} />
 		<title>{frontmatter.title}</title>
@@ -45,9 +46,6 @@ import Header from '../components/Header.astro' ;
 	}
 	main {
 		/*margin: auto;*/
-		padding: 1rem;
-		width: 800px;
-		max-width: calc(100% - 2rem);
 		color: white;
 		font-size: 20px;
 		line-height: 1.6;
